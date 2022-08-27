@@ -8,7 +8,7 @@ public class weaponchooser : MonoBehaviour
     public GameObject currentg;
     public GameObject pistol;
     public GameObject hc;
-    public GameObject hsniper;
+    public GameObject sniper;
     public GameObject smg;
     public GameObject flamethrower;
     public GameObject machgun;
@@ -63,10 +63,10 @@ public class weaponchooser : MonoBehaviour
 
         if (Input.GetKey("3"))
         {
-            //heavy sniper
+            //sniper
             hideGuns();
-            hsniper.SetActive(true);
-            currentg = hsniper;
+            sniper.SetActive(true);
+            currentg = sniper;
         }
         
         if (Input.GetKey("4"))
@@ -145,7 +145,7 @@ public class weaponchooser : MonoBehaviour
     {
         // pistol.SetActive(false);
         // hc.SetActive(false);
-        // hsniper.SetActive(false);
+        // sniper.SetActive(false);
         // smg.SetActive(false);
         // flamethrower.SetActive(false);
         // machgun.SetActive(false);

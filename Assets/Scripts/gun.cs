@@ -5,14 +5,13 @@ using UnityEngine;
 public class gun : MonoBehaviour
 {
     [Header("gun options")]
-    public GameObject johnathan;
+    private GameObject johnathan;
     public float sbeed = 25;
     public GameObject pbullet;
     public float timer = 0;
     private Camera cam;
     private float gunpoint;
     public float lens = .33f;
-    public GameObject bull;
     public float cooldown = .6f;
     public float heat = 100;
     public float heatc = 0;
@@ -58,6 +57,8 @@ public class gun : MonoBehaviour
 
         gunpoint = Mathf.Atan2(offsety, offsetx) * (180/Mathf.PI);
         transform.parent.rotation = Quaternion.Euler(0, 0, -180+gunpoint);
+
+        GameObject bull;
         
         if(ps == 1)
             if(Input.GetKey(KeyCode.Mouse0) && timer > cooldown && oheated == false)
