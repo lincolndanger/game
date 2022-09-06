@@ -39,7 +39,7 @@ public class weaponchooser : MonoBehaviour
 
         if (Input.GetKey("1") && Input.GetKey("space"))
         {
-            //spliter
+            //machpist
             hideGuns();
             machpist.SetActive(true);
             currentg = machpist;
@@ -55,7 +55,7 @@ public class weaponchooser : MonoBehaviour
 
         if (Input.GetKey("2") && Input.GetKey("space"))
         {
-            //machpist
+            //spliter
             hideGuns();
             spliter.SetActive(true);
             currentg = spliter;
@@ -77,7 +77,7 @@ public class weaponchooser : MonoBehaviour
             currentg = smg;
         }
 
-                if (Input.GetKey("4") && Input.GetKey("space"))
+            if (Input.GetKey("4") && Input.GetKey("space"))
         {
             //SMG B
             hideGuns();
@@ -143,11 +143,11 @@ public class weaponchooser : MonoBehaviour
 
     void hideGuns()
     {
-        // pistol.SetActive(false);
-        // hc.SetActive(false);
-        // sniper.SetActive(false);
-        // smg.SetActive(false);
-        // flamethrower.SetActive(false);
+        pistol.SetActive(false);
+        hc.SetActive(false);
+        sniper.SetActive(false);
+        smg.SetActive(false);
+        flamethrower.SetActive(false);
         // machgun.SetActive(false);
         // shotty.SetActive(false);
         // turret.SetActive(false);
@@ -156,6 +156,6 @@ public class weaponchooser : MonoBehaviour
         // sfists.SetActive(false);
         // machpist.SetActive(false);
         // smgb.SetActive(false);
-        // spliter.SetActive(false);
+        spliter.SetActive(false);
     }
 }

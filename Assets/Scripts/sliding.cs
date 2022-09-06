@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class slider : MonoBehaviour
+public class sliding : MonoBehaviour
 {
     public weaponchooser wc;
-    public float b;
+    public Slider heatbar;
     // Start is called before the first frame update
     void Start()
     {
         wc.currentg.GetComponent<gun>();
+        
+        //wc.currentg.GetComponent<gun>().heatc;
     }
 
     // Update is called once per frame
     void Update()
     {
-        b = wc.currentg.GetComponent<gun>().heatc;
+        heatbar.value = 200;
     }
 }
