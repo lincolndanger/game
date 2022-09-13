@@ -5,12 +5,11 @@ using UnityEngine.UIElements;
 
 public class sliding : MonoBehaviour
 {
-    public weaponchooser wc;
     public Slider heatbar;
     // Start is called before the first frame update
     void Start()
     {
-        wc.currentg.GetComponent<gun>();
+        //weaponchooser.currentg;
         
         //wc.currentg.GetComponent<gun>().heatc;
     }

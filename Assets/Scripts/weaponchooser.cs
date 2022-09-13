@@ -5,7 +5,7 @@ using UnityEngine;
 public class weaponchooser : MonoBehaviour
 
 {
-    public GameObject currentg;
+    public static GameObject currentg;
     public GameObject pistol;
     public GameObject hc;
     public GameObject sniper;
@@ -148,13 +148,13 @@ public class weaponchooser : MonoBehaviour
         sniper.SetActive(false);
         smg.SetActive(false);
         flamethrower.SetActive(false);
-        // machgun.SetActive(false);
-        // shotty.SetActive(false);
-        // turret.SetActive(false);
-        // revol.SetActive(false);
-        // fists.SetActive(false);
-        // sfists.SetActive(false);
-        // machpist.SetActive(false);
+        machgun.SetActive(false);
+        shotty.SetActive(false);
+        turret.SetActive(false);
+        revol.SetActive(false);
+        fists.SetActive(false);
+        sfists.SetActive(false);
+        machpist.SetActive(false);
         // smgb.SetActive(false);
         spliter.SetActive(false);
     }

@@ -14,6 +14,10 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        speed = gun.speedy;
+
+
+
         if (Input.GetKey("w"))
         {
             transform.Translate(0,Time.deltaTime*speed,0);
@@ -33,5 +37,8 @@ public class playerMovement : MonoBehaviour
         {
             transform.Translate(Time.deltaTime*speed,0,0);
         }
+
+
+        
     }
 }

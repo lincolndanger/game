@@ -7,39 +7,42 @@ public class gun : MonoBehaviour
     [Header("gun options")]
     private GameObject johnathan;
     public float sbeed = 25;
+    public static float speedy = 8;
     public GameObject pbullet;
     public float timer = 0;
     private Camera cam;
     private float gunpoint;
     public float lens = .33f;
     public float cooldown = .6f;
+    [Header("ammo")]
     public float heat = 100;
     public float heatc = 0;
     public bool oheated = false;
+    public float reloadt;
     public int ps = 1;
-    //public float ultimatime = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
         johnathan = GameObject.Find("Player");
-        StartCoroutine(heatimer());
+        //StartCoroutine(heatimer());
     }
 
 
     IEnumerator heatimer()
     {
         while (true)
-        {
-            if(oheated == false)
-                yield return new WaitForSeconds(3);
-                heatc = heatc - heatc/4;
+        {   
+            print("0");
             if(oheated == true)
-                print("w");
-                yield return new WaitForSeconds(13);
+                print("1");
+                yield return new WaitForSeconds(reloadt);
                 oheated = false;
-                heatc = heatc/4;
+                heatc = 0;
+                print("2");
+            yield return new WaitForSeconds (1f);
+            print("e");
+            
         }
     }
     // Update is called once per frame
@@ -51,6 +54,9 @@ public class gun : MonoBehaviour
 
         float offsetx;
         float offsety;
+
+        if (Input.GetKey("r"))
+            oheated = true;
 
         offsetx = johnathan.transform.position.x - cam.ScreenToWorldPoint(Input.mousePosition).x;
         offsety = johnathan.transform.position.y - cam.ScreenToWorldPoint(Input.mousePosition).y;

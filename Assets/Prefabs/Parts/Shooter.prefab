@@ -94,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -122,12 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 831624ee8464684448b01556db869753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  johnathan: {fileID: 0}
   sbeed: 25
   pbullet: {fileID: 0}
   timer: 0
   lens: 0.33
-  bull: {fileID: 0}
   cooldown: 0.6
   heat: 100
   heatc: 0
