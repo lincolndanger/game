@@ -25,7 +25,7 @@ public class gun : MonoBehaviour
     {
         cam = Camera.main;
         johnathan = GameObject.Find("Player");
-        //StartCoroutine(heatimer());
+        StartCoroutine(heatimer());
     }
 
 
@@ -33,13 +33,15 @@ public class gun : MonoBehaviour
     {
         while (true)
         {   
-            print("0");
-            if(oheated == true)
-                print("1");
+            print("htim");
+            if(oheated == true || Input.GetKey("r"))
+            {
+                oheated = true;
                 yield return new WaitForSeconds(reloadt);
                 oheated = false;
                 heatc = 0;
-                print("2");
+            }
+
             yield return new WaitForSeconds (1f);
             print("e");
             
@@ -54,9 +56,6 @@ public class gun : MonoBehaviour
 
         float offsetx;
         float offsety;
-
-        if (Input.GetKey("r"))
-            oheated = true;
 
         offsetx = johnathan.transform.position.x - cam.ScreenToWorldPoint(Input.mousePosition).x;
         offsety = johnathan.transform.position.y - cam.ScreenToWorldPoint(Input.mousePosition).y;
@@ -73,7 +72,7 @@ public class gun : MonoBehaviour
                 bull.GetComponent<Bullet>().gvar = this;
                 timer = 0;
                 heatc = heatc+1;
-                    if(heat < heatc)
+                    if(heat <= heatc)
                         oheated = true;
             }
 

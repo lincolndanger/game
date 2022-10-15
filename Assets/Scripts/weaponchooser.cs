@@ -20,15 +20,20 @@ public class weaponchooser : MonoBehaviour
     public GameObject machpist;
     public GameObject smgb;
     public GameObject spliter;
+    public GameObject og;
+    public sliding un;
+    public sliding two;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        //fists.SetActive(true);
         currentg = fists;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKey("1"))
         {
             //pistol
@@ -138,6 +143,14 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             sfists.SetActive(true);
             currentg = sfists;
+        }
+
+        if (currentg != og) 
+        {
+            og = currentg;
+            print ("s");
+            un.CurrentShooters();
+            two.CurrentShooters();
         }
     }
 
