@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7261339108945695576}
   m_Layer: 0
   m_Name: Spreadshot
-  m_TagString: Untagged
+  m_TagString: BULLET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,6 +152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spreadshot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -229,6 +233,10 @@ PrefabInstance:
     - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_Name
       value: Spreadshot (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
@@ -308,6 +316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spreadshot (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -385,6 +397,10 @@ PrefabInstance:
     - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_Name
       value: Spreadshot (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
@@ -464,6 +480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spreadshot (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -541,6 +561,10 @@ PrefabInstance:
     - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_Name
       value: Spreadshot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
@@ -620,6 +644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spreadshot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -698,6 +726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spreadshot (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -775,6 +807,10 @@ PrefabInstance:
     - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_Name
       value: Spreadshot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555288275011896054, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8550091471957353896, guid: f3ef6ca8dafaac34fbcb472fbcb10f29, type: 3}
       propertyPath: m_RootOrder

@@ -20,39 +20,47 @@ public class gun : MonoBehaviour
     public bool oheated = false;
     public float reloadt;
     public int ps = 1;
+    public bool reloading = false;
 
     void Start()
     {
         cam = Camera.main;
         johnathan = GameObject.Find("Player");
-        StartCoroutine(heatimer());
+        // StartCoroutine(heatimer());
     }
 
 
-    IEnumerator heatimer()
-    {
-        while (true)
-        {   
-            print("htim");
-            if(oheated == true || Input.GetKey("r"))
-            {
-                oheated = true;
-                yield return new WaitForSeconds(reloadt);
-                oheated = false;
-                heatc = 0;
-            }
-
-            yield return new WaitForSeconds (1f);
-            print("e");
+    // IEnumerator heatimer()
+    // {
+    //     while (true)
+    //     {   
+    //         print("htim");
             
-        }
+
+    //         yield return new WaitForSeconds (1f);
+    //         print("e");
+            
+    //     }
+    // }
+
+    IEnumerator reload()
+    {
+        oheated = true;
+        yield return new WaitForSeconds(reloadt);
+        oheated = false;
+        reloading = false;
+        heatc = 0;
     }
     // Update is called once per frame
     void Update()
     {   
-        timer = timer + Time.deltaTime;//2;
-        //if(ultimatime<timer)
-        //    timer = timer + Time.deltaTime/2;
+
+        if((Input.GetKey("r") || oheated == true) && reloading == false)
+        {
+            StartCoroutine(reload());
+            reloading = true;
+        }
+        timer = timer + Time.deltaTime;
 
         float offsetx;
         float offsety;
@@ -83,7 +91,7 @@ public class gun : MonoBehaviour
                 bull.GetComponent<Bullet>().gvar = this;
                 timer = 0;
                 heatc = heatc+1;
-                    if(heat < heatc)
+                    if(heat <= heatc)
                         oheated = true;
             }
         

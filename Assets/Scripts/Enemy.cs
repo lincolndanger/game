@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public float tlimer = .1f;
-    public gun gvar;
-
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -16,17 +14,11 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
-        
-
-        tlimer = tlimer + Time.deltaTime;
-        transform.Translate(Time.deltaTime*gvar.sbeed,0,0);
-        if(tlimer > gvar.lens)
-            Destroy(gameObject);
-
     }
+
     void OnTriggerEnter2D(Collider2D collider)
     {   
-        if(collider.tag == "WALL")
+        if(collider.tag == "BULLET")
         {
             Destroy(gameObject);
         }

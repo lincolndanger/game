@@ -168,7 +168,7 @@ public class weaponchooser : MonoBehaviour
         fists.SetActive(false);
         sfists.SetActive(false);
         machpist.SetActive(false);
-        // smgb.SetActive(false);
+        smgb.SetActive(false);
         spliter.SetActive(false);
     }
 }
