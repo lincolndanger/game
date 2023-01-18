@@ -30,7 +30,7 @@ public class sliding : MonoBehaviour
         heatbar.value = pgun.heatc;
     }
 
-    public void CurrentShooters()
+    public gun CurrentShooters()
     {
         shooters = weaponchooser.currentg.GetComponentsInChildren<gun>();
 
@@ -44,6 +44,7 @@ public class sliding : MonoBehaviour
 
         heatbar.maxValue = pgun.heat;
         heatbar.value = heatbar.maxValue;
+        return pgun;
     }    
     
 }

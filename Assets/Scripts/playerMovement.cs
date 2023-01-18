@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float speed = 10;
+    public static float speed = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,9 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        speed = gun.speedy;
+        //speed = weaponchooser.currentg.GetComponent<gun>().speedy;
+
+        //print(weaponchooser.currentg.GetComponent<gun>());
 
 
 
@@ -39,6 +41,11 @@ public class playerMovement : MonoBehaviour
         }
 
 
+        
+    }
+
+    public void respawn()
+    {
         
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WALL
   - BULLET
+  - E1
   layers:
   - Default
   - TransparentFX

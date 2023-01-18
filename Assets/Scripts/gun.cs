@@ -7,7 +7,7 @@ public class gun : MonoBehaviour
     [Header("gun options")]
     private GameObject johnathan;
     public float sbeed = 25;
-    public static float speedy = 8;
+    public float speedy = 8;
     public GameObject pbullet;
     public float timer = 0;
     private Camera cam;
@@ -78,6 +78,7 @@ public class gun : MonoBehaviour
             {
                 bull = Instantiate(pbullet, gameObject.transform.position, gameObject.transform.rotation);
                 bull.GetComponent<Bullet>().gvar = this;
+                //variable.GetComponent<Script Name>().variable in script = this;
                 timer = 0;
                 heatc = heatc+1;
                     if(heat <= heatc)

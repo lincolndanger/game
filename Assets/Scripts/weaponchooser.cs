@@ -6,6 +6,7 @@ public class weaponchooser : MonoBehaviour
 
 {
     public static GameObject currentg;
+    public static gun currentShooter;
     public GameObject pistol;
     public GameObject hc;
     public GameObject sniper;
@@ -40,6 +41,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             pistol.SetActive(true);
             currentg = pistol;
+            Enemy.rdamage = 25;
         }
 
         if (Input.GetKey("1") && Input.GetKey("space"))
@@ -48,6 +50,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             machpist.SetActive(true);
             currentg = machpist;
+            Enemy.rdamage = 18;
         }
 
         if (Input.GetKey("2"))
@@ -56,6 +59,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             hc.SetActive(true);
             currentg = hc;
+            Enemy.rdamage = 45;
         }
 
         if (Input.GetKey("2") && Input.GetKey("space"))
@@ -64,6 +68,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             spliter.SetActive(true);
             currentg = spliter;
+            Enemy.rdamage = 33;
         }
 
         if (Input.GetKey("3"))
@@ -72,6 +77,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             sniper.SetActive(true);
             currentg = sniper;
+            Enemy.rdamage = 90;
         }
         
         if (Input.GetKey("4"))
@@ -80,6 +86,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             smg.SetActive(true);
             currentg = smg;
+            Enemy.rdamage = 15;
         }
 
             if (Input.GetKey("4") && Input.GetKey("space"))
@@ -88,6 +95,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             smgb.SetActive(true);
             currentg = smgb;
+            Enemy.rdamage = 10;
         }
 
         if (Input.GetKey("5"))
@@ -95,6 +103,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             flamethrower.SetActive(true);
             currentg = flamethrower;
+            Enemy.rdamage = 4;
         }
 
         if (Input.GetKey("6"))
@@ -103,6 +112,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             machgun.SetActive(true);
             currentg = machgun;
+            Enemy.rdamage = 15;
         }
 
         if (Input.GetKey("7"))
@@ -111,6 +121,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             shotty.SetActive(true);
             currentg = shotty;
+            Enemy.rdamage = 50;
         }
 
         if (Input.GetKey("8"))
@@ -119,6 +130,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             turret.SetActive(true);
             currentg = turret;
+            Enemy.rdamage = 60;
         }
 
         if (Input.GetKey("9"))
@@ -127,6 +139,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             revol.SetActive(true);
             currentg = revol;
+            Enemy.rdamage = 30;
         }
         
         if (Input.GetKey("0"))
@@ -135,6 +148,7 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             fists.SetActive(true);
             currentg = fists;
+            Enemy.rdamage = 12;
         }
 
         if (Input.GetKey("0") && Input.GetKey("space"))
@@ -143,14 +157,16 @@ public class weaponchooser : MonoBehaviour
             hideGuns();
             sfists.SetActive(true);
             currentg = sfists;
+            Enemy.rdamage = 6;
         }
-
+// gun swap spot
         if (currentg != og) 
         {
             og = currentg;
-            print ("s");
-            un.CurrentShooters();
+            //print ("s");
+            currentShooter = un.CurrentShooters();
             two.CurrentShooters();
+            playerMovement.speed = currentShooter.speedy;
         }
     }
 
