@@ -124,3 +124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tlimer: 0.1
   gvar: {fileID: 0}
+  pierce: 1000
+  cpie: 0
+  id: 0
+  rotat: 0
+  cooler: 2

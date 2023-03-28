@@ -14,6 +14,7 @@ public class PlayerHP : MonoBehaviour
     void Start()
     {
        instance = this;
+       HP = MaxHp;
     }
 
     // Update is called once per frame

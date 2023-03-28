@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2747690628134850419, guid: 16037dbd798344f57a526d53d48f5ead, type: 3}
   m_Color: {r: 0.39799035, g: 0, b: 0.5471698, a: 1}
   m_FlipX: 0
@@ -132,7 +132,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 367525645918921397}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.49999997
+  m_Radius: 0.15
   m_Speed: 10
   m_Acceleration: 3
   avoidancePriority: 50
@@ -159,4 +159,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   good: {fileID: 0}
   meanhp: 6
+  maxmeanhp: 0
   Damage: 6

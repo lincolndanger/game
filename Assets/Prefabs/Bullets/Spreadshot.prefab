@@ -133,6 +133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tlimer: 0.1
   gvar: {fileID: 0}
+  pierce: 10
+  cpie: 0
 --- !u!1001 &4337706423447248052
 PrefabInstance:
   m_ObjectHideFlags: 0

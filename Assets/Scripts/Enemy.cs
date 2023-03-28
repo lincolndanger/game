@@ -8,12 +8,15 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     public Transform good;
     public float meanhp;
+    public float maxmeanhp;
     public int Damage;
+    public static float xp;
     static public float rdamage;
     NavMeshAgent agent;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        maxmeanhp = meanhp;
 		agent.updateRotation = false;
 		agent.updateUpAxis = false;
     }
@@ -28,9 +31,8 @@ public class Enemy : MonoBehaviour
     {   
         if(collider.tag == "BULLET")
         {
-            meanhp = meanhp - rdamage;
-            if(meanhp <= 1f)
-                Destroy(gameObject);
+            StartCoroutine(hit());
+
         }
     }
 
@@ -46,5 +48,20 @@ public class Enemy : MonoBehaviour
     {
         PlayerHP.instance.damaged(Damage);
         yield return new WaitForSeconds(1.5f);
+    }
+
+    IEnumerator hit()
+    {
+        meanhp = meanhp - rdamage;
+        xp = xp + maxmeanhp;
+        Time.timeScale = .15f;
+        yield return new WaitForSecondsRealtime(.2f);
+        Time.timeScale = 1;
+        if(meanhp <= 1f)
+        {
+            Destroy(gameObject);
+        }
+        print("functional");
+        yield return new WaitForSeconds(.695f);
     }
 }
