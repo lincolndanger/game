@@ -12,13 +12,25 @@ public class Enemy : MonoBehaviour
     public int Damage;
     public static float xp;
     static public float rdamage;
+    //public Transform goodzwei;
+    public bool wall = false;
+    //public Transform nw;
     NavMeshAgent agent;
+    public int destroyer = 0;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         maxmeanhp = meanhp;
 		agent.updateRotation = false;
 		agent.updateUpAxis = false;
+        // if(destroyer == 1)
+        // {
+        //     agent.Warp(new Vector3(-115,-187, 0));
+        // }
+        if(wall == true)
+        {
+            meanhp = transform.localScale.x * transform.localScale.y * 20;
+        }
     }
 
     // Update is called once per frame
@@ -54,14 +66,21 @@ public class Enemy : MonoBehaviour
     {
         meanhp = meanhp - rdamage;
         xp = xp + maxmeanhp;
-        Time.timeScale = .15f;
-        yield return new WaitForSecondsRealtime(.2f);
-        Time.timeScale = 1;
+        Time.timeScale = .18f;
+        yield return new WaitForSecondsRealtime(.05f);
+        Time.timeScale = 1f;
         if(meanhp <= 1f)
         {
+            spawn.allEnemies.Remove(gameObject);
             Destroy(gameObject);
         }
-        print("functional");
+        // if(weaponchooser.icy >= 0)
+        // {
+        //     goodzwei = good;
+        //     good = nw;
+        //     yield return new WaitForSeconds(weaponchooser.icy);
+        //     good = goodzwei;
+        // }
         yield return new WaitForSeconds(.695f);
     }
 }

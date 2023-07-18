@@ -80,16 +80,20 @@ PrefabInstance:
       value: Hordite 2.0 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6917455884024024569, guid: 11c81ede073a3294caf9f65f554e4255, type: 3}
+      propertyPath: nw
+      value: 
+      objectReference: {fileID: 2903971495062980299, guid: 2a59ef595ae4eb740bbd9a1e3ab512be, type: 3}
+    - target: {fileID: 6917455884024024569, guid: 11c81ede073a3294caf9f65f554e4255, type: 3}
       propertyPath: good
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8448984162466623241, guid: 6ad348baa7a5dc7498c77df50e5bfb22, type: 3}
     - target: {fileID: 6917455884024024569, guid: 11c81ede073a3294caf9f65f554e4255, type: 3}
       propertyPath: Damage
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6917455884024024569, guid: 11c81ede073a3294caf9f65f554e4255, type: 3}
       propertyPath: meanhp
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11c81ede073a3294caf9f65f554e4255, type: 3}

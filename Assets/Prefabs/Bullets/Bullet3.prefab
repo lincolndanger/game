@@ -129,3 +129,8 @@ MonoBehaviour:
   id: 0
   rotat: 0
   cooler: 2
+  range: 1000000
+  odist: 0
+  cdist: 0
+  seek: 0
+  shra: 1

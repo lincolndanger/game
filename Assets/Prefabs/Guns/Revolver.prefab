@@ -172,13 +172,21 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
+      propertyPath: lens
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: sbeed
       value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
+      propertyPath: speedy
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: pbullet
       value: 
-      objectReference: {fileID: 847391129399952927, guid: 36cfc83e51acdd743864958fe9720e2e, type: 3}
+      objectReference: {fileID: 4585818429630624701, guid: fcf3e51ad4718a8449f553022e4ad42c, type: 3}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: cooldown
       value: 0.8

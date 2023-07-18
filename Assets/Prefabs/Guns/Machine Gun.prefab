@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: heat
-      value: 222
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: lens
@@ -302,7 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: heat
-      value: 222
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4724335728237836576, guid: 516634a983649554982adc996b656874, type: 3}
       propertyPath: lens

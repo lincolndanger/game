@@ -15,6 +15,7 @@ public class spawn : MonoBehaviour
     public float e2b = 18f;
     public float e3b = .8f;
     public float e4b = 120f;
+    static public List<GameObject> allEnemies = new List<GameObject>{};
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,8 @@ public class spawn : MonoBehaviour
         StartCoroutine(spawnerii());
         StartCoroutine(spawneriii());
         StartCoroutine(spawneriv());
+        Time.timeScale = 1;
+
         
     }
 
@@ -40,6 +43,7 @@ public class spawn : MonoBehaviour
             float randey = Random.Range(NW.position.y , SE.position.y);
             GameObject mean = Instantiate(E1, new Vector2(randex , randey), transform.rotation);
             Enemy emeny = mean.GetComponent<Enemy>();
+            allEnemies.Add(mean);
             emeny.good = good;
             yield return new WaitForSeconds(e1b);
         }
@@ -54,6 +58,7 @@ public class spawn : MonoBehaviour
             float randey = Random.Range(NW.position.y , SE.position.y);
             GameObject mean = Instantiate(E2, new Vector2(randex , randey), transform.rotation);
             Enemy emeny = mean.GetComponent<Enemy>();
+            allEnemies.Add(mean);
             emeny.good = good;
             yield return new WaitForSeconds(e2b);
         }
@@ -68,6 +73,7 @@ public class spawn : MonoBehaviour
             float randey = Random.Range(NW.position.y , SE.position.y);
             GameObject mean = Instantiate(E3, new Vector2(randex , randey), transform.rotation);
             Enemy emeny = mean.GetComponent<Enemy>();
+            allEnemies.Add(mean);
             emeny.good = good;
             yield return new WaitForSeconds(e3b);
         }
@@ -83,6 +89,7 @@ public class spawn : MonoBehaviour
             GameObject mean = Instantiate(E4, new Vector2(randex , randey), transform.rotation);
             Enemy emeny = mean.GetComponent<Enemy>();
             emeny.good = good;
+            allEnemies.Add(mean);
             yield return new WaitForSeconds(e4b);
         }
     }

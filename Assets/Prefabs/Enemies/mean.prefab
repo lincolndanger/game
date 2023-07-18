@@ -157,7 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8dc07756fa851f4b8ccfa836080b232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  good: {fileID: 0}
+  good: {fileID: 8448984162466623241, guid: 6ad348baa7a5dc7498c77df50e5bfb22, type: 3}
   meanhp: 60
   maxmeanhp: 0
   Damage: 6
+  goodzwei: {fileID: 0}
+  nw: {fileID: 2903971495062980299, guid: 2a59ef595ae4eb740bbd9a1e3ab512be, type: 3}

@@ -21,6 +21,7 @@ public class gun : MonoBehaviour
     public float reloadt;
     public int ps = 1;
     public bool reloading = false;
+    public GameObject easterb;
 
     void Start()
     {
@@ -60,6 +61,11 @@ public class gun : MonoBehaviour
             StartCoroutine(reload());
             reloading = true;
         }
+
+        if(Input.GetKey("p"))
+        {
+            pbullet = easterb;
+        }
         timer = timer + Time.deltaTime;
 
         float offsetx;
@@ -87,6 +93,17 @@ public class gun : MonoBehaviour
 
         if(ps == 2)
             if(Input.GetKey(KeyCode.Mouse1) && timer > cooldown && oheated == false)
+            {
+                bull = Instantiate(pbullet, gameObject.transform.position, gameObject.transform.rotation);
+                bull.GetComponent<Bullet>().gvar = this;
+                timer = 0;
+                heatc = heatc+1;
+                    if(heat <= heatc)
+                        oheated = true;
+            }
+
+        if(ps == 3)
+            if(Input.GetKey("q") && timer > cooldown && oheated == false)
             {
                 bull = Instantiate(pbullet, gameObject.transform.position, gameObject.transform.rotation);
                 bull.GetComponent<Bullet>().gvar = this;

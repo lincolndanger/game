@@ -130,6 +130,11 @@ MonoBehaviour:
   id: 0
   rotat: 0
   cooler: 1
+  range: 1e+15
+  odist: 0
+  cdist: 0
+  seek: 1
+  shra: 0
 --- !u!1001 &3490983478754207390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,6 +205,10 @@ PrefabInstance:
     - target: {fileID: 5647943729114287799, guid: 633446c8bcac25f44ad5290dd1677177, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935073320758170670, guid: 633446c8bcac25f44ad5290dd1677177, type: 3}
+      propertyPath: seek
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6935073320758170670, guid: 633446c8bcac25f44ad5290dd1677177, type: 3}
       propertyPath: cooler

@@ -135,6 +135,14 @@ MonoBehaviour:
   gvar: {fileID: 0}
   pierce: 10
   cpie: 0
+  id: 0
+  rotat: 0
+  cooler: 0
+  range: 1000000
+  odist: 0
+  cdist: 0
+  seek: 0
+  shra: 0
 --- !u!1001 &4337706423447248052
 PrefabInstance:
   m_ObjectHideFlags: 0

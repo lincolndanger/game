@@ -91,7 +91,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4928175331680420542}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sbeed: 25
+  speedy: 8
   pbullet: {fileID: 0}
   timer: 0
   lens: 0.33
@@ -130,4 +131,7 @@ MonoBehaviour:
   heat: 100
   heatc: 0
   oheated: 0
+  reloadt: 0
   ps: 1
+  reloading: 0
+  easterb: {fileID: 0}
